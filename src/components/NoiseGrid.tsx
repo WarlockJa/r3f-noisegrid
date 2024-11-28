@@ -41,7 +41,7 @@ export default function NoiseGrid(controls: Controls) {
       p.z = ns * zPosScale;
       verts.setXYZ(i, p.x, p.y, p.z);
       col.lerpColors(lowColor, highColor, ns * lightnessMult);
-      let { r, g, b } = col;
+      const { r, g, b } = col;
       colors.push(r, g, b);
     }
     geo.setAttribute("position", verts);
