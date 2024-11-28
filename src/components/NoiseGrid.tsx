@@ -16,7 +16,7 @@ export default function NoiseGrid(controls: Controls) {
   const planeGeo = new THREE.PlaneGeometry(8, 6, 64, 48);
   const coords = planeGeo.attributes.position;
   let colors = [];
-  let col = new THREE.Color();
+  const col = new THREE.Color();
   const p = new THREE.Vector3();
 
   // CONTROLS

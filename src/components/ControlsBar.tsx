@@ -3,8 +3,6 @@
 import useDebounce from "@/hooks/useDebounce";
 import { RgbColorPicker } from "react-colorful";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
-import { colord } from "colord";
-import rgbToThreeColor from "@/lib/rgbToThreeColor";
 import { Controls } from "@/types/types";
 
 export default function ControlsBar({
@@ -56,7 +54,7 @@ export default function ControlsBar({
         />
       </div>
       <Popover>
-        <PopoverTrigger className="hover:bg-primary/20 rounded-sm border px-4 transition-colors">
+        <PopoverTrigger className="rounded-sm border px-4 transition-colors hover:bg-primary/20">
           Low Amplitude Colors
         </PopoverTrigger>
         <PopoverContent className="h-[334px] w-[334px]">
@@ -69,7 +67,7 @@ export default function ControlsBar({
         </PopoverContent>
       </Popover>
       <Popover>
-        <PopoverTrigger className="hover:bg-primary/20 rounded-sm border px-4 transition-colors">
+        <PopoverTrigger className="rounded-sm border px-4 transition-colors hover:bg-primary/20">
           High Amplitude Colors
         </PopoverTrigger>
         <PopoverContent className="h-[334px] w-[334px]">
